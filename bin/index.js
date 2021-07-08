@@ -14,8 +14,8 @@ if(shell.which('git')) {
       if(shell.exec('git push').code !== 0){
         const currentBranch = shell.exec('git rev-parse --abbrev-ref HEAD').stdout
         shell.exec(`git push --set-upstream origin ${currentBranch}`);
-        shell.echo('push success');    
       }
+      shell.echo('push success');
     }else{
       shell.echo('请规范commit记录');  
     }
