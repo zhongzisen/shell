@@ -1,0 +1,14 @@
+{
+  "name": "shell",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/zhongzisen/shell.git",
+  "author": "zhongzisen <zhongzisen@qianxin.com>",
+  "license": "MIT",
+  "scripts": {
+    "push": "node ./bin/index.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
+  }
+}
