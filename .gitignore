@@ -2,6 +2,7 @@
 node_modules
 /dist
 */sitemap.json
+constants
 
 # local env files
 .env.local
