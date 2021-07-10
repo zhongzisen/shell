@@ -11,4 +11,7 @@ module.exports = {
     info: (value) => {
         log(chalk.blue(value));
     },
+    success: (value) => {
+        log(chalk.green(value));
+    }
 }

@@ -6,7 +6,7 @@
   "author": "zhongzisen <zhongzisen@qianxin.com>",
   "license": "MIT",
   "scripts": {
-    "push": "node ./bin/index.js"
+    "push": "node ./bin/git-push.js"
   },
   "dependencies": {
     "chalk": "^4.1.1",
