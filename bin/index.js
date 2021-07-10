@@ -1,4 +1,5 @@
 const shell = require('shelljs');
+const log = require('../configs/log');
 
 const { COMMIT_TYPES } = require('../constants/index');
 
@@ -15,13 +16,13 @@ if(shell.which('git')) {
         const currentBranch = shell.exec('git rev-parse --abbrev-ref HEAD').stdout
         shell.exec(`git push --set-upstream origin ${currentBranch}`);
       }
-      shell.echo('push success');
+      log.info('push success');
     }else{
-      shell.echo('请规范commit记录');  
-    }
-    
+      log.warn('请规范commit记录');  
+    } 
   }else {
-    shell.echo('请输入commit记录');
-  }
-  
+    log.warn('请输入commit记录');
+  }  
+}else {
+  log.error('不支持git');
 }

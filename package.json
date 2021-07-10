@@ -9,6 +9,7 @@
     "push": "node ./bin/index.js"
   },
   "dependencies": {
+    "chalk": "^4.1.1",
     "shelljs": "^0.8.4"
   }
 }
