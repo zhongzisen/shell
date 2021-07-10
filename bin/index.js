@@ -16,7 +16,7 @@ if(shell.which('git')) {
         const currentBranch = shell.exec('git rev-parse --abbrev-ref HEAD').stdout
         shell.exec(`git push --set-upstream origin ${currentBranch}`);
       }
-      log.info('push success');
+      log.info('推送成功');
     }else{
       log.warn('请规范commit记录');  
     } 
