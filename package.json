@@ -6,7 +6,7 @@
   "author": "zhongzisen <zhongzisen@qianxin.com>",
   "license": "MIT",
   "bin": {
-	"push": "node ./bin/index.js"
+	  "push": "./bin/index.js"
   },
   "scripts": {
     "push": "node ./bin/index.js",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const shell = require('shelljs');
 
 const { COMMIT_TYPES } = require('../constants/index');
