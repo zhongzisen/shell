@@ -5,10 +5,18 @@
   "repository": "https://github.com/zhongzisen/shell.git",
   "author": "zhongzisen <zhongzisen@qianxin.com>",
   "license": "MIT",
+  "bin": {
+	"push": "node ./bin/index.js"
+  },
   "scripts": {
-    "push": "node ./bin/index.js"
+    "push": "node ./bin/index.js",
+    "test": "node ./bin/test.js",
+    "inquirer": "node ./bin/inquirer-test.js",
+    "commander": "node ./bin/commander.js"
   },
   "dependencies": {
+    "commander": "^8.0.0",
+    "inquirer": "^8.1.1",
     "shelljs": "^0.8.4"
   }
 }

@@ -24,4 +24,6 @@ if(shell.which('git')) {
     shell.echo('请输入commit记录');
   }
   
+} else{
+  shell.echo('不支持git');
 }
